@@ -111,6 +111,18 @@ header .landing button {
   letter-spacing: 2px;
   font-weight: 700;
   font-size: 10px;
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+}
+header .landing button:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 /* End Header */
 /* Start info */
@@ -565,11 +577,12 @@ section.info {
   padding: var(--section-padding) 0 0 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+  gap: 30px;
 }
 @media (min-width: 768px) {
   .team .container .team-persons {
     grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 20px;
   }
 }
 @media (min-width: 1200px) {
@@ -586,13 +599,14 @@ section.info {
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+
 }
 .team .container .team-persons .person:hover {
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
 }
 .team .container .team-persons .person img {
   height: 230px;
@@ -720,9 +734,16 @@ footer .container {
   color: #fff;
   font-size: 14px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 footer .container .copy-right {
-  flex-basis: 37%;
+  flex-basis: 100%;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  footer .container .copy-right {
+    flex-basis: 37%;
+  }
 }
 footer .container .copy-right img {
   margin-left: 15px;
@@ -732,28 +753,54 @@ footer .container .copy-right p:first-of-type {
   line-height: 1.7;
 }
 footer .container .copy-right p:nth-of-type(2) {
-margin-top: 50px;
-margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  footer .container .copy-right p:nth-of-type(2) {
+    margin-top: 50px;
+  }
 }
 footer .container .copy-right p:nth-of-type(2) span {
   color: var(--main-color);
 }
 footer .container .links {
-  flex-basis: 13%;
+  flex-basis: 50%;
+  text-align: center;
 }
 footer .container .about {
-  flex-basis: 8%;
+  flex-basis: 50%;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  footer .container .links {
+    flex-basis: 13%;
+    text-align: start;
+  }
+  footer .container .about {
+    flex-basis: 8%;
+    text-align: start;
+  }
 }
 footer .container div h4 {
-margin-bottom: 15px;
-font-weight: 400;
+  margin-bottom: 15px;
+  font-weight: 400;
 }
 footer .container div ul li {
   margin-bottom: 15px;
   font-weight: 300;
 }
 footer .container .contact {
-  flex-basis: 31%;
+  flex-basis: 100%;
+  margin-top: 40px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  footer .container .contact {
+    flex-basis: 31%;
+    text-align: start;
+    margin-top: 0;
+  }
 }
 footer .container .contact a {
   display: block;
