@@ -36,6 +36,12 @@
             <span></span>
             <span></span>
           </div>
+          <ul style="display: none;">
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#team">Team</a></li>
+          </ul>
         </div>
       </nav>
       <div class="landing">
@@ -61,7 +67,7 @@
     </section>
     <!-- End info -->
     <!-- Start services -->
-    <section class="services">
+    <section class="services" id="services">
       <div class="container">
         <img src="Images/services-section-icon.png" alt="icon" />
         <h2>OUR SERVICES</h2>
@@ -196,7 +202,7 @@
     </section>
     <!-- End services -->
     <!-- Start portfolio -->
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="container">
         <img src="Images/services-section-icon.png" alt="icon" />
         <h2>OUR PORTFOLIO</h2>
@@ -207,18 +213,18 @@
         </p>
         <div class="heading-container">
           <div class="heading-left">
-            <h6>GRAPHIC</h6>
-            <h6>WEB</h6>
+            <h6 class="graphic">GRAPHIC</h6>
+            <h6 class="web">WEB</h6>
           </div>
           <img src="Images/logo.png" alt="logo" />
           <div class="heading-right">
-            <h6>DEVELOPMENT</h6>
-            <h6>APP</h6>
+            <h6 class="development">DEVELOPMENT</h6>
+            <h6 class="app">APP</h6>
           </div>
         </div>
       </div>
       <div class="images-container">
-        <div class="image">
+        <div class="image graphic">
           <div class="info">
             <h5>DOE BRANDING</h5>
             <p>
@@ -229,7 +235,7 @@
           </div>
           <img src="Images/portfolio1.png" alt="image" />
         </div>
-        <div class="image">
+        <div class="image web">
           <div class="info">
             <h5>DOE BRANDING</h5>
             <p>
@@ -240,7 +246,7 @@
           </div>
           <img src="Images/portfolio5.png" alt="image" />
         </div>
-        <div class="image">
+        <div class="image app">
           <div class="info">
             <h5>DOE BRANDING</h5>
             <p>
@@ -251,7 +257,7 @@
           </div>
           <img src="Images/portfolio3.png" alt="image" />
         </div>
-        <div class="image">
+        <div class="image development">
           <div class="info">
             <h5>DOE BRANDING</h5>
             <p>
@@ -262,18 +268,7 @@
           </div>
           <img src="Images/portfolio4.png" alt="image" />
         </div>
-        <div class="image">
-          <div class="info">
-            <h5>DOE BRANDING</h5>
-            <p>
-              Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
-              dui. Quisque velit nisi, pretium ut lacinia in, elementum id
-              enim...
-            </p>
-          </div>
-          <img src="Images/portfolio2.png" alt="image" />
-        </div>
-        <div class="image">
+        <div class="image web">
           <div class="info">
             <h5>DOE BRANDING</h5>
             <p>
@@ -283,6 +278,17 @@
             </p>
           </div>
           <img src="Images/portfolio6.png" alt="image" />
+        </div>
+        <div class="image graphic">
+          <div class="info">
+            <h5>DOE BRANDING</h5>
+            <p>
+              Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
+              dui. Quisque velit nisi, pretium ut lacinia in, elementum id
+              enim...
+            </p>
+          </div>
+          <img src="Images/portfolio2.png" alt="image" />
         </div>
       </div>
       <button>LIKE WHAT YOU SEE?</button>
@@ -295,7 +301,7 @@
     </section>
     <!-- End video -->
     <!-- Start Team -->
-    <section class="team">
+    <section class="team" id="team">
       <div class="container">
         <img src="Images/services-section-icon.png" alt="icon" />
         <h2>OUR TEAM</h2>
@@ -417,9 +423,13 @@
         </div>
         <div class="contact">
           <h4>Contact Us</h4>
-          <p>Get in touch with us via mail phone.We are waiting for 
-            your call or message</p>
-          <a href="mailto:graphberry@gmail.com"><button>graphberry@gmail.com</button></a>
+          <p>
+            Get in touch with us via mail phone.We are waiting for your call or
+            message
+          </p>
+          <a href="mailto:graphberry@gmail.com"
+            ><button>graphberry@gmail.com</button></a
+          >
           <img src="Images/about-icon1.png" alt="icon" />
           <img src="Images/about-icon2.png" alt="icon" />
           <img src="Images/about-icon3.png" alt="icon" />
@@ -428,5 +438,9 @@
       </div>
     </footer>
     <!-- End footer -->
+    <!-- JQuery -->
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <!-- Main Script -->
+    <script src="JS/script.js"></script>
   </body>
 </html>
